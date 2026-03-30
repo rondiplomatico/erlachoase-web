@@ -1,0 +1,681 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title data-de="Erlachoase – Holiday &amp; Inspiration | Ferienwohnung am Waldrand" data-en="Erlachoase – Holiday &amp; Inspiration | Vacation Apartment by the Forest">Erlachoase – Holiday &amp; Inspiration | Ferienwohnung am Waldrand</title>
+  <meta name="description" data-de="Erlachoase – Ihre Ferienwohnung am Waldrand in Leinfelden-Echterdingen. 64qm, 3 Zimmer, Terrasse, Yoga &amp; Meditation. Nahe Stuttgart." data-en="Erlachoase – Your vacation apartment by the forest in Leinfelden-Echterdingen. 64sqm, 3 rooms, terrace, yoga &amp; meditation. Near Stuttgart." content="Erlachoase – Ihre Ferienwohnung am Waldrand in Leinfelden-Echterdingen. 64qm, 3 Zimmer, Terrasse, Yoga &amp; Meditation. Nahe Stuttgart.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&family=Nunito+Sans:opsz,wght@6..12,300;6..12,400;6..12,500;6..12,600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Navigation -->
+  <nav class="nav" id="nav">
+    <div class="nav-inner">
+      <a href="#" class="nav-logo">
+        <img src="logo.png" alt="Erlachoase Logo">
+        <span>erlachoase</span>
+      </a>
+      <ul class="nav-links">
+        <li><a href="#wohnung" data-de="Wohnung" data-en="Apartment">Wohnung</a></li>
+        <li><a href="#galerie" data-de="Galerie" data-en="Gallery">Galerie</a></li>
+        <li><a href="#wellness">Wellness</a></li>
+        <li><a href="#umgebung" data-de="Umgebung" data-en="Surroundings">Umgebung</a></li>
+        <li><a href="#buchen" class="nav-cta" data-de="Buchen" data-en="Book">Buchen</a></li>
+      </ul>
+      <div class="lang-switch">
+        <button data-lang="de" onclick="setLanguage('de')">DE</button>
+        <span class="lang-divider">|</span>
+        <button data-lang="en" onclick="setLanguage('en')">EN</button>
+      </div>
+      <button class="hamburger" id="hamburger" aria-label="Menü öffnen">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- Mobile Menu -->
+  <div class="mobile-menu" id="mobileMenu">
+    <a href="#wohnung" onclick="closeMobile()" data-de="Wohnung" data-en="Apartment">Wohnung</a>
+    <a href="#galerie" onclick="closeMobile()" data-de="Galerie" data-en="Gallery">Galerie</a>
+    <a href="#wellness" onclick="closeMobile()">Wellness</a>
+    <a href="#umgebung" onclick="closeMobile()" data-de="Umgebung" data-en="Surroundings">Umgebung</a>
+    <a href="#buchen" onclick="closeMobile()" data-de="Buchen" data-en="Book">Buchen</a>
+    <div class="mobile-lang-switch">
+      <button data-lang="de" onclick="setLanguage('de')">DE</button>
+      <button data-lang="en" onclick="setLanguage('en')">EN</button>
+    </div>
+  </div>
+
+  <!-- Hero -->
+  <section class="hero" id="hero">
+    <div class="hero-content">
+      <img src="logo.png" alt="Erlachoase" class="hero-logo">
+      <h1>erlachoase</h1>
+      <p class="hero-tagline">Holiday &amp; Inspiration</p>
+      <p class="hero-sub" data-de="Eure kleine Oase am Waldrand in Echterdingen Stetten — zum Entspannen, Kraft tanken und neue Inspiration finden." data-en="Your little oasis by the forest in Echterdingen Stetten — to relax, recharge and find new inspiration.">Eure kleine Oase am Waldrand in Echterdingen Stetten — zum Entspannen, Kraft tanken und neue Inspiration finden.</p>
+      <div class="hero-badges">
+        <span class="hero-badge">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-4 0a1 1 0 01-1-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 01-1 1"/></svg>
+          <span data-de="64 m² · 3 Zimmer" data-en="64 m² · 3 Rooms">64 m² · 3 Zimmer</span>
+        </span>
+        <span class="hero-badge">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 3v4M3 5h4M6 17v4m-2-2h4m5-16l2.286 6.857L21 12l-5.714 2.143L13 21l-2.286-6.857L5 12l5.714-2.143L13 3z"/></svg>
+          <span data-de="Erdgeschoss · Terrasse" data-en="Ground Floor · Terrace">Erdgeschoss · Terrasse</span>
+        </span>
+        <span class="hero-badge">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"/></svg>
+          <span data-de="500m zum Wald" data-en="500m to the Forest">500m zum Wald</span>
+        </span>
+      </div>
+      <div class="hero-buttons">
+        <a href="#buchen" class="btn btn-primary" data-de="Verfügbarkeit prüfen" data-en="Check Availability">Verfügbarkeit prüfen</a>
+        <a href="#wohnung" class="btn btn-secondary" data-de="Entdecken" data-en="Explore">Entdecken</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Welcome -->
+  <section class="welcome" id="willkommen">
+    <div class="section-inner">
+      <div class="welcome-grid">
+        <div class="welcome-text reveal">
+          <p class="section-label" data-de="Willkommen" data-en="Welcome">Willkommen</p>
+          <h2 class="section-title" data-de="Fühlt euch wie zu Hause" data-en="Feel Right at Home">Fühlt euch wie zu Hause</h2>
+          <p data-de="Wir — Moni, Dani und unsere drei Kinder — freuen uns sehr, euch in unserer kleinen Ferienwohnung am Waldrand begrüßen zu dürfen." data-en="We — Moni, Dani and our three kids — are delighted to welcome you to our little vacation apartment by the forest.">Wir — Moni, Dani und unsere drei Kinder — freuen uns sehr, euch in unserer kleinen Ferienwohnung am Waldrand begrüßen zu dürfen.</p>
+          <p data-de="Unsere Erlachoase ist mehr als nur ein Platz zum Schlafen — sie ist eine kleine Oase zum Entspannen, Kraft tanken und neue Inspiration finden. Genießt die Natur, den nahen Wald und gemeinsame Zeit!" data-en="Our Erlachoase is more than just a place to sleep — it's a little oasis to relax, recharge and find new inspiration. Enjoy nature, the nearby forest and quality time together!">Unsere Erlachoase ist mehr als nur ein Platz zum Schlafen — sie ist eine kleine Oase zum Entspannen, Kraft tanken und neue Inspiration finden. Genießt die Natur, den nahen Wald und gemeinsame Zeit!</p>
+          <p data-de="Die Wohnung liegt in ruhiger Wohnlage in Echterdingen Stetten, nur 500m zum Wald. Der Flughafen ist zwar in der Nähe, bei geschlossenen Fenstern aber kaum wahrnehmbar." data-en="The apartment is located in a quiet residential area in Echterdingen Stetten, just 500m to the forest. Although the airport is nearby, it's barely noticeable with the windows closed.">Die Wohnung liegt in ruhiger Wohnlage in Echterdingen Stetten, nur 500m zum Wald. Der Flughafen ist zwar in der Nähe, bei geschlossenen Fenstern aber kaum wahrnehmbar.</p>
+          <div class="divider"></div>
+        </div>
+        <div class="welcome-image reveal">
+          <img src="images/PXL_20250825_114021580.jpg" alt="Eingang Erlachstraße 21" loading="lazy">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Gallery -->
+  <section class="gallery" id="galerie">
+    <div class="section-inner">
+      <p class="section-label reveal" data-de="Impressionen" data-en="Impressions">Impressionen</p>
+      <h2 class="section-title reveal" data-de="Eure Ferienwohnung" data-en="Your Vacation Apartment">Eure Ferienwohnung</h2>
+      <p class="section-desc reveal" data-de="64 Quadratmeter Wohlfühlatmosphäre mit drei Zimmern, modernem Bad, vollausgestatteter Küche und eigener Terrasse ins Grüne." data-en="64 square meters of comfort with three rooms, a modern bathroom, fully equipped kitchen and your own terrace overlooking the green.">64 Quadratmeter Wohlfühlatmosphäre mit drei Zimmern, modernem Bad, vollausgestatteter Küche und eigener Terrasse ins Grüne.</p>
+
+      <!-- Main Gallery Grid -->
+      <div class="gallery-grid reveal">
+        <div class="gallery-item" onclick="openLightbox(0)">
+          <img src="images/20250915_081925905_iOS.jpg" alt="Wohnzimmer mit TV und Terrassentür" loading="lazy">
+          <div class="gallery-caption" data-de="Wohnzimmer — TV, Pflanze &amp; Terrassentür" data-en="Living Room — TV, Plant &amp; Terrace Door" data-html>Wohnzimmer — TV, Pflanze &amp; Terrassentür</div>
+        </div>
+        <div class="gallery-item" onclick="openLightbox(1)">
+          <img src="images/20251026_080611514_iOS.jpg" alt="Schlafzimmer 2 mit blauer Bettwäsche" loading="lazy">
+          <div class="gallery-caption" data-de="Schlafzimmer 2 — Gemütliches Doppelbett" data-en="Bedroom 2 — Cozy Double Bed">Schlafzimmer 2 — Gemütliches Doppelbett</div>
+        </div>
+        <div class="gallery-item" onclick="openLightbox(2)">
+          <img src="images/20250824_141652434_iOS.jpg" alt="Modernes Bad mit Badewanne" loading="lazy">
+          <div class="gallery-caption" data-de="Modernes Bad mit Badewanne" data-en="Modern Bathroom with Bathtub">Modernes Bad mit Badewanne</div>
+        </div>
+        <div class="gallery-item" onclick="openLightbox(3)">
+          <img src="images/20250825_152316825_iOS.jpg" alt="Terrasse mit Gartenblick" loading="lazy">
+          <div class="gallery-caption" data-de="Terrasse mit Gartenblick" data-en="Terrace with Garden View">Terrasse mit Gartenblick</div>
+        </div>
+        <div class="gallery-item" onclick="openLightbox(4)">
+          <img src="images/20250825_150335458_iOS.jpg" alt="Moderne Küche" loading="lazy">
+          <div class="gallery-caption" data-de="Küche — Spüle &amp; Ceranfeld" data-en="Kitchen — Sink &amp; Hob" data-html>Küche — Spüle &amp; Ceranfeld</div>
+        </div>
+        <div class="gallery-item" onclick="openLightbox(5)">
+          <img src="images/PXL_20250825_113938697.jpg" alt="Außenansicht des Hauses" loading="lazy">
+          <div class="gallery-caption" data-de="Außenansicht — Erlachstraße 21" data-en="Exterior — Erlachstraße 21">Außenansicht — Erlachstraße 21</div>
+        </div>
+      </div>
+
+      <!-- Gallery Slider (all additional images) -->
+      <div class="gallery-slider-wrapper reveal">
+        <button class="slider-nav slider-prev" onclick="slideGallery(-1)">&#8249;</button>
+        <div class="gallery-slider" id="gallerySlider">
+          <!-- Schlafzimmer 1 -->
+          <div class="gallery-slider-item" onclick="openLightbox(6)">
+            <img src="images/20250824_124554476_iOS.jpg" alt="Schlafzimmer 1" loading="lazy">
+            <div class="gallery-caption" data-de="Schlafzimmer 1 — Doppelbett" data-en="Bedroom 1 — Double Bed">Schlafzimmer 1 — Doppelbett</div>
+          </div>
+          <div class="gallery-slider-item" onclick="openLightbox(7)">
+            <img src="images/20250915_081837522_iOS.jpg" alt="Schlafzimmer 1 mit Yogaecke" loading="lazy">
+            <div class="gallery-caption" data-de="Schlafzimmer 1 — mit Yogaecke" data-en="Bedroom 1 — with Yoga Corner">Schlafzimmer 1 — mit Yogaecke</div>
+          </div>
+          <div class="gallery-slider-item" onclick="openLightbox(8)">
+            <img src="images/20250915_124026573_iOS.jpg" alt="Schlafzimmer 1 gemütlich" loading="lazy">
+            <div class="gallery-caption" data-de="Schlafzimmer 1 — Gemütliche Atmosphäre" data-en="Bedroom 1 — Cozy Atmosphere">Schlafzimmer 1 — Gemütliche Atmosphäre</div>
+          </div>
+          <div class="gallery-slider-item" onclick="openLightbox(9)">
+            <img src="images/20250915_124036385_iOS.jpg" alt="Schlafzimmer 1 Panorama" loading="lazy">
+            <div class="gallery-caption" data-de="Schlafzimmer 1 — Panorama mit Yogaecke" data-en="Bedroom 1 — Panorama with Yoga Corner">Schlafzimmer 1 — Panorama mit Yogaecke</div>
+          </div>
+          <div class="gallery-slider-item" onclick="openLightbox(10)">
+            <img src="images/20251026_080546472_iOS.jpg" alt="Schlafzimmer 1 mit Reisebett" loading="lazy">
+            <div class="gallery-caption" data-de="Schlafzimmer 1 — mit Reisebett" data-en="Bedroom 1 — with Travel Cot">Schlafzimmer 1 — mit Reisebett</div>
+          </div>
+          <div class="gallery-slider-item" onclick="openLightbox(11)">
+            <img src="images/PXL_20250824_120759659.jpg" alt="Schlafzimmer 1 Kleiderschrank" loading="lazy">
+            <div class="gallery-caption" data-de="Schlafzimmer 1 — Kleiderschrank" data-en="Bedroom 1 — Wardrobe">Schlafzimmer 1 — Kleiderschrank</div>
+          </div>
+          <div class="gallery-slider-item" onclick="openLightbox(12)">
+            <img src="images/PXL_20250824_120817331.jpg" alt="Schlafzimmer 1 Nachttisch" loading="lazy">
+            <div class="gallery-caption" data-de="Schlafzimmer 1 — Nachttisch &amp; Deko" data-en="Bedroom 1 — Nightstand &amp; Decor" data-html>Schlafzimmer 1 — Nachttisch &amp; Deko</div>
+          </div>
+          <!-- Schlafzimmer 2 -->
+          <div class="gallery-slider-item" onclick="openLightbox(13)">
+            <img src="images/20250824_140557433_iOS.jpg" alt="Schlafzimmer 2" loading="lazy">
+            <div class="gallery-caption" data-de="Schlafzimmer 2 — Bett &amp; Balkontür" data-en="Bedroom 2 — Bed &amp; Balcony Door" data-html>Schlafzimmer 2 — Bett &amp; Balkontür</div>
+          </div>
+          <div class="gallery-slider-item" onclick="openLightbox(14)">
+            <img src="images/20251026_080623687_iOS.jpg" alt="Schlafzimmer 2 Kommode" loading="lazy">
+            <div class="gallery-caption" data-de="Schlafzimmer 2 — Kommode &amp; Vorhänge" data-en="Bedroom 2 — Dresser &amp; Curtains" data-html>Schlafzimmer 2 — Kommode &amp; Vorhänge</div>
+          </div>
+          <!-- Wohnzimmer -->
+          <div class="gallery-slider-item" onclick="openLightbox(15)">
+            <img src="images/20250915_081930044_iOS.jpg" alt="Wohnzimmer TV-Bereich" loading="lazy">
+            <div class="gallery-caption" data-de="Wohnzimmer — TV-Bereich" data-en="Living Room — TV Area">Wohnzimmer — TV-Bereich</div>
+          </div>
+          <div class="gallery-slider-item" onclick="openLightbox(16)">
+            <img src="images/20250915_081934503_iOS.jpg" alt="Wohnzimmer Sofa" loading="lazy">
+            <div class="gallery-caption" data-de="Wohnzimmer — Gemütliches Sofa" data-en="Living Room — Cozy Sofa">Wohnzimmer — Gemütliches Sofa</div>
+          </div>
+          <div class="gallery-slider-item" onclick="openLightbox(17)">
+            <img src="images/20250915_082005045_iOS.jpg" alt="Wohnzimmer Esstisch" loading="lazy">
+            <div class="gallery-caption" data-de="Wohnzimmer — Esstisch" data-en="Living Room — Dining Table">Wohnzimmer — Esstisch</div>
+          </div>
+          <div class="gallery-slider-item" onclick="openLightbox(18)">
+            <img src="images/20250915_082012797_iOS.jpg" alt="Essbereich mit Weltkarte" loading="lazy">
+            <div class="gallery-caption" data-de="Wohnzimmer — Essbereich mit Weltkarte" data-en="Living Room — Dining Area with Map">Wohnzimmer — Essbereich mit Weltkarte</div>
+          </div>
+          <div class="gallery-slider-item" onclick="openLightbox(19)">
+            <img src="images/20250915_124107079_iOS.jpg" alt="Wohnzimmer Überblick" loading="lazy">
+            <div class="gallery-caption" data-de="Wohnzimmer — Überblick" data-en="Living Room — Overview">Wohnzimmer — Überblick</div>
+          </div>
+          <div class="gallery-slider-item" onclick="openLightbox(20)">
+            <img src="images/20251026_080555783_iOS.jpg" alt="Wohnzimmer mit Terrasse" loading="lazy">
+            <div class="gallery-caption" data-de="Wohnzimmer — Sofa &amp; Terrasse" data-en="Living Room — Sofa &amp; Terrace" data-html>Wohnzimmer — Sofa &amp; Terrasse</div>
+          </div>
+          <div class="gallery-slider-item" onclick="openLightbox(21)">
+            <img src="images/20251026_080649069_iOS.jpg" alt="Wohnzimmer gemütlich" loading="lazy">
+            <div class="gallery-caption" data-de="Wohnzimmer — Gemütlicher Blick" data-en="Living Room — Cozy View">Wohnzimmer — Gemütlicher Blick</div>
+          </div>
+          <!-- Küche -->
+          <div class="gallery-slider-item" onclick="openLightbox(22)">
+            <img src="images/20250825_150353113_iOS.jpg" alt="Küche mit Backofen" loading="lazy">
+            <div class="gallery-caption" data-de="Küche — Backofen &amp; Fenster" data-en="Kitchen — Oven &amp; Window" data-html>Küche — Backofen &amp; Fenster</div>
+          </div>
+          <div class="gallery-slider-item" onclick="openLightbox(23)">
+            <img src="images/20250825_150422311_iOS.jpg" alt="Küche mit Kräutern" loading="lazy">
+            <div class="gallery-caption" data-de="Küche — Kräuter am Fenster" data-en="Kitchen — Herbs on Windowsill">Küche — Kräuter am Fenster</div>
+          </div>
+          <div class="gallery-slider-item" onclick="openLightbox(24)">
+            <img src="images/20250915_082422289_iOS.jpg" alt="Kaffeemaschine und Tee" loading="lazy">
+            <div class="gallery-caption" data-de="Küche — Kaffeemaschine &amp; Tee" data-en="Kitchen — Coffee Machine &amp; Tea" data-html>Küche — Kaffeemaschine &amp; Tee</div>
+          </div>
+          <div class="gallery-slider-item" onclick="openLightbox(25)">
+            <img src="images/20250915_082432092_iOS.jpg" alt="Küche U-Form" loading="lazy">
+            <div class="gallery-caption" data-de="Küche — U-Form Überblick" data-en="Kitchen — U-Shape Overview">Küche — U-Form Überblick</div>
+          </div>
+          <div class="gallery-slider-item" onclick="openLightbox(26)">
+            <img src="images/20250915_124219657_iOS.jpg" alt="Küche mit Pflanzen" loading="lazy">
+            <div class="gallery-caption" data-de="Küche — Kaffeemaschine &amp; Pflanzen" data-en="Kitchen — Coffee Machine &amp; Plants" data-html>Küche — Kaffeemaschine &amp; Pflanzen</div>
+          </div>
+          <!-- Bad -->
+          <div class="gallery-slider-item" onclick="openLightbox(27)">
+            <img src="images/20250824_141700280_iOS.jpg" alt="Bad Badewanne" loading="lazy">
+            <div class="gallery-caption" data-de="Bad — Badewanne &amp; Waschbecken" data-en="Bathroom — Bathtub &amp; Sink" data-html>Bad — Badewanne &amp; Waschbecken</div>
+          </div>
+          <div class="gallery-slider-item" onclick="openLightbox(28)">
+            <img src="images/20250824_141725264_iOS.jpg" alt="Bad Gesamtansicht" loading="lazy">
+            <div class="gallery-caption" data-de="Bad — Gesamtansicht" data-en="Bathroom — Full View">Bad — Gesamtansicht</div>
+          </div>
+          <!-- Flur -->
+          <div class="gallery-slider-item" onclick="openLightbox(29)">
+            <img src="images/20250825_151244498_iOS.jpg" alt="Flur Eingangsbereich" loading="lazy">
+            <div class="gallery-caption" data-de="Flur — Eingangsbereich" data-en="Hallway — Entrance Area">Flur — Eingangsbereich</div>
+          </div>
+          <div class="gallery-slider-item" onclick="openLightbox(30)">
+            <img src="images/20250825_151322961_iOS.jpg" alt="Flur Richtung Zimmer" loading="lazy">
+            <div class="gallery-caption" data-de="Flur — Blick Richtung Zimmer" data-en="Hallway — View Towards Rooms">Flur — Blick Richtung Zimmer</div>
+          </div>
+          <div class="gallery-slider-item" onclick="openLightbox(31)">
+            <img src="images/20250915_082506546_iOS.jpg" alt="Flur ins Wohnzimmer" loading="lazy">
+            <div class="gallery-caption" data-de="Flur — Blick ins Wohnzimmer" data-en="Hallway — View into Living Room">Flur — Blick ins Wohnzimmer</div>
+          </div>
+          <!-- Terrasse -->
+          <div class="gallery-slider-item" onclick="openLightbox(32)">
+            <img src="images/20250825_152748732_iOS.jpg" alt="Terrasse Sitzbereich" loading="lazy">
+            <div class="gallery-caption" data-de="Terrasse — Sitzbereich" data-en="Terrace — Seating Area">Terrasse — Sitzbereich</div>
+          </div>
+          <div class="gallery-slider-item" onclick="openLightbox(33)">
+            <img src="images/20250825_153929939_iOS.jpg" alt="Terrasse Gartenblick" loading="lazy">
+            <div class="gallery-caption" data-de="Terrasse — Gartenblick" data-en="Terrace — Garden View">Terrasse — Gartenblick</div>
+          </div>
+          <div class="gallery-slider-item" onclick="openLightbox(34)">
+            <img src="images/20250927_100535089_iOS.jpg" alt="Terrasse gemütliche Ecke" loading="lazy">
+            <div class="gallery-caption" data-de="Terrasse — Gemütliche Ecke" data-en="Terrace — Cozy Corner">Terrasse — Gemütliche Ecke</div>
+          </div>
+          <!-- Außenansicht -->
+          <div class="gallery-slider-item" onclick="openLightbox(35)">
+            <img src="images/PXL_20250825_113926403.jpg" alt="Außenansicht Blumenbeet" loading="lazy">
+            <div class="gallery-caption" data-de="Außenansicht — Blumenbeet" data-en="Exterior — Flower Bed">Außenansicht — Blumenbeet</div>
+          </div>
+          <!-- Wellness & Details -->
+          <div class="gallery-slider-item" onclick="openLightbox(36)">
+            <img src="images/20250915_082154680_iOS.jpg" alt="Buddha und Räucherstäbchen" loading="lazy">
+            <div class="gallery-caption" data-de="Wellness — Buddha &amp; Räucherstäbchen" data-en="Wellness — Buddha &amp; Incense" data-html>Wellness — Buddha &amp; Räucherstäbchen</div>
+          </div>
+          <div class="gallery-slider-item" onclick="openLightbox(37)">
+            <img src="images/20250915_082018438_iOS.jpg" alt="Willkommensgruß" loading="lazy">
+            <div class="gallery-caption" data-de="Willkommensgruß — Snacks &amp; QR-Code" data-en="Welcome — Snacks &amp; QR Code" data-html>Willkommensgruß — Snacks &amp; QR-Code</div>
+          </div>
+          <div class="gallery-slider-item" onclick="openLightbox(38)">
+            <img src="images/20250915_082032969_iOS.jpg" alt="Bücher und Inspiration" loading="lazy">
+            <div class="gallery-caption" data-de="Inspiration — Bücher &amp; Chakra-Karten" data-en="Inspiration — Books &amp; Chakra Cards" data-html>Inspiration — Bücher &amp; Chakra-Karten</div>
+          </div>
+          <div class="gallery-slider-item" onclick="openLightbox(39)">
+            <img src="images/PXL_20250824_140031726.jpg" alt="Schreibtisch mit Lampe" loading="lazy">
+            <div class="gallery-caption" data-de="Detail — Schreibtisch mit Lampe" data-en="Detail — Desk with Lamp">Detail — Schreibtisch mit Lampe</div>
+          </div>
+        </div>
+        <button class="slider-nav slider-next" onclick="slideGallery(1)">&#8250;</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- Rooms -->
+  <section class="rooms" id="wohnung">
+    <div class="section-inner">
+      <p class="section-label reveal" data-de="Räumlichkeiten" data-en="Rooms">Räumlichkeiten</p>
+      <h2 class="section-title reveal" data-de="Drei Zimmer zum Wohlfühlen" data-en="Three Rooms to Feel Good">Drei Zimmer zum Wohlfühlen</h2>
+      <div class="rooms-grid">
+        <div class="room-card reveal">
+          <div class="room-card-img">
+            <img src="images/20250915_124102608_iOS.jpg" alt="Schlafzimmer 1" loading="lazy">
+          </div>
+          <div class="room-card-body">
+            <h3 data-de="Schlafzimmer 1" data-en="Bedroom 1">Schlafzimmer 1</h3>
+            <p data-de="Geräumiges Schlafzimmer mit bequemem 140cm Bett, großem Kleiderschrank und stimmungsvollen Deko-Lampen für gemütliche Abende." data-en="Spacious bedroom with a comfortable 140cm bed, large wardrobe and atmospheric decorative lamps for cozy evenings.">Geräumiges Schlafzimmer mit bequemem 140cm Bett, großem Kleiderschrank und stimmungsvollen Deko-Lampen für gemütliche Abende.</p>
+          </div>
+        </div>
+        <div class="room-card reveal">
+          <div class="room-card-img">
+            <img src="images/PXL_20250824_135817747.jpg" alt="Schlafzimmer 2" loading="lazy">
+          </div>
+          <div class="room-card-body">
+            <h3 data-de="Schlafzimmer 2" data-en="Bedroom 2">Schlafzimmer 2</h3>
+            <p data-de="Zweites Schlafzimmer mit 140cm Bett, kleiner Kommode und eigenem Schreibtisch — ideal auch zum Arbeiten oder Lesen." data-en="Second bedroom with 140cm bed, small dresser and its own desk — also ideal for working or reading.">Zweites Schlafzimmer mit 140cm Bett, kleiner Kommode und eigenem Schreibtisch — ideal auch zum Arbeiten oder Lesen.</p>
+          </div>
+        </div>
+        <div class="room-card reveal">
+          <div class="room-card-img">
+            <img src="images/20251026_080634477_iOS.jpg" alt="Wohnzimmer" loading="lazy">
+          </div>
+          <div class="room-card-body">
+            <h3 data-de="Wohnzimmer" data-en="Living Room">Wohnzimmer</h3>
+            <p data-de="Heller Wohnbereich mit bequemer Schlafcouch, Smart-TV und Esstisch für vier Personen — euer Treffpunkt zum Entspannen." data-en="Bright living area with comfortable sofa bed, smart TV and dining table for four — your meeting point for relaxation.">Heller Wohnbereich mit bequemer Schlafcouch, Smart-TV und Esstisch für vier Personen — euer Treffpunkt zum Entspannen.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Amenities -->
+  <section class="amenities">
+    <div class="section-inner">
+      <p class="section-label reveal" data-de="Ausstattung" data-en="Amenities">Ausstattung</p>
+      <h2 class="section-title reveal" data-de="Alles was ihr braucht" data-en="Everything You Need">Alles was ihr braucht</h2>
+      <div class="amenities-grid">
+        <div class="amenity-item reveal">
+          <div class="amenity-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M8.111 16.404a5.5 5.5 0 017.778 0M12 20h.01m-7.08-7.071c3.904-3.905 10.236-3.905 14.141 0M1.394 9.393c5.857-5.858 15.355-5.858 21.213 0"/></svg>
+          </div>
+          <h4 data-de="Schnelles WLAN" data-en="Fast Wi-Fi">Schnelles WLAN</h4>
+          <p data-de="Kostenloses High-Speed Internet" data-en="Free high-speed internet">Kostenloses High-Speed Internet</p>
+        </div>
+        <div class="amenity-item reveal">
+          <div class="amenity-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="7" width="20" height="15" rx="2"/><path d="M17 2l-5 5-5-5"/></svg>
+          </div>
+          <h4>Smart TV</h4>
+          <p data-de="Streaming &amp; Unterhaltung" data-en="Streaming &amp; Entertainment" data-html>Streaming &amp; Unterhaltung</p>
+        </div>
+        <div class="amenity-item reveal">
+          <div class="amenity-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 9l9-7 9 7v11a2 2 0 01-2 2H5a2 2 0 01-2-2z"/><polyline points="9,22 9,12 15,12 15,22"/></svg>
+          </div>
+          <h4 data-de="Vollküche" data-en="Full Kitchen">Vollküche</h4>
+          <p data-de="Ceranfeld, Backofen, Spülmaschine" data-en="Ceramic hob, oven, dishwasher">Ceranfeld, Backofen, Spülmaschine</p>
+        </div>
+        <div class="amenity-item reveal">
+          <div class="amenity-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 12h16M4 12c0 4 2 8 8 8s8-4 8-8M7 8c0-2 2-4 5-4s5 2 5 4"/></svg>
+          </div>
+          <h4 data-de="Badewanne" data-en="Bathtub">Badewanne</h4>
+          <p data-de="Modernes Bad mit Fußbodenheizung" data-en="Modern bathroom with underfloor heating">Modernes Bad mit Fußbodenheizung</p>
+        </div>
+        <div class="amenity-item reveal">
+          <div class="amenity-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="4"/><circle cx="12" cy="12" r="4"/><path d="M12 8v-2m0 12v-2m4-4h2m-12 0H4"/></svg>
+          </div>
+          <h4 data-de="Waschmaschine" data-en="Washing Machine">Waschmaschine</h4>
+          <p data-de="Direkt in der Wohnung" data-en="Right in the apartment">Direkt in der Wohnung</p>
+        </div>
+        <div class="amenity-item reveal">
+          <div class="amenity-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 10V6a2 2 0 00-2-2H4a2 2 0 00-2 2v7a2 2 0 002 2h3"/><rect x="10" y="10" width="12" height="10" rx="1"/></svg>
+          </div>
+          <h4 data-de="El. Fensterläden" data-en="Electric Shutters">El. Fensterläden</h4>
+          <p data-de="Bequem per Knopfdruck" data-en="Convenient at the push of a button">Bequem per Knopfdruck</p>
+        </div>
+        <div class="amenity-item reveal">
+          <div class="amenity-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+          </div>
+          <h4 data-de="Terrasse" data-en="Terrace">Terrasse</h4>
+          <p data-de="Mit kleinem Grünstreifen" data-en="With a small green strip">Mit kleinem Grünstreifen</p>
+        </div>
+        <div class="amenity-item reveal">
+          <div class="amenity-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+          </div>
+          <h4 data-de="Sicherheit" data-en="Security">Sicherheit</h4>
+          <p data-de="Hochsicherheitstür &amp; Gegensprechanlage" data-en="High-security door &amp; intercom" data-html>Hochsicherheitstür &amp; Gegensprechanlage</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Wellness -->
+  <section class="wellness" id="wellness">
+    <div class="section-inner">
+      <div class="wellness-grid">
+        <div class="wellness-image reveal">
+          <img src="images/20250915_081855615_iOS.jpg" alt="Yoga & Meditation Ecke" loading="lazy">
+        </div>
+        <div class="reveal">
+          <p class="section-label" data-de="Eure Erholungs-Oase" data-en="Your Relaxation Oasis">Eure Erholungs-Oase</p>
+          <h2 class="section-title" data-de="Inspiration &amp; Achtsamkeit" data-en="Inspiration &amp; Mindfulness" data-html>Inspiration &amp; Achtsamkeit</h2>
+          <p class="section-desc" style="margin-bottom: 2rem;" data-de="Unsere Ferienwohnung bietet euch besondere Möglichkeiten, zur Ruhe zu kommen und neue Energie zu finden." data-en="Our vacation apartment offers you special opportunities to find peace and discover new energy.">Unsere Ferienwohnung bietet euch besondere Möglichkeiten, zur Ruhe zu kommen und neue Energie zu finden.</p>
+          <div class="wellness-features">
+            <div class="wellness-feature">
+              <div class="wellness-feature-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 19.5A2.5 2.5 0 016.5 17H20"/><path d="M6.5 2H20v20H6.5A2.5 2.5 0 014 19.5v-15A2.5 2.5 0 016.5 2z"/></svg>
+              </div>
+              <div>
+                <h4 data-de="Bücher zur Inspiration" data-en="Books for Inspiration">Bücher zur Inspiration</h4>
+                <p data-de="Anregungen für Achtsamkeit, Gelassenheit und innere Ruhe — inklusive Enneagramm-Bücher." data-en="Inspiration for mindfulness, serenity and inner peace — including Enneagram books.">Anregungen für Achtsamkeit, Gelassenheit und innere Ruhe — inklusive Enneagramm-Bücher.</p>
+              </div>
+            </div>
+            <div class="wellness-feature">
+              <div class="wellness-feature-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 8A6 6 0 006 8c0 7-3 9-3 9h18s-3-2-3-9"/><path d="M13.73 21a2 2 0 01-3.46 0"/></svg>
+              </div>
+              <div>
+                <h4 data-de="Yoga &amp; Meditation" data-en="Yoga &amp; Meditation" data-html>Yoga &amp; Meditation</h4>
+                <p data-de="Mit vorbereiteten Utensilien jederzeit in eure persönliche Auszeit starten." data-en="Start your personal time-out anytime with our prepared yoga and meditation supplies.">Mit vorbereiteten Utensilien jederzeit in eure persönliche Auszeit starten.</p>
+              </div>
+            </div>
+            <div class="wellness-feature">
+              <div class="wellness-feature-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20.84 4.61a5.5 5.5 0 00-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 00-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 000-7.78z"/></svg>
+              </div>
+              <div>
+                <h4 data-de="Enneagramm-Coaching" data-en="Enneagram Coaching">Enneagramm-Coaching</h4>
+                <p data-de="Unser Coach Daniel unterstützt euch dabei, euch selbst besser zu verstehen und Klarheit zu finden. Persönliche Stunden buchbar." data-en="Our coach Daniel helps you understand yourself better and find clarity. Personal sessions available upon request.">Unser Coach Daniel unterstützt euch dabei, euch selbst besser zu verstehen und Klarheit zu finden. Persönliche Stunden buchbar.</p>
+              </div>
+            </div>
+            <div class="wellness-feature">
+              <div class="wellness-feature-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2L2 7l10 5 10-5-10-5z"/><path d="M2 17l10 5 10-5M2 12l10 5 10-5"/></svg>
+              </div>
+              <div>
+                <h4 data-de="Achtsamkeits-Box" data-en="Mindfulness Box">Achtsamkeits-Box</h4>
+                <p data-de="Impulskarten für kleine Momente der Reflexion und Inspiration — Antworten finden oder innere Fragen bewegen." data-en="Prompt cards for small moments of reflection and inspiration — find answers or explore inner questions.">Impulskarten für kleine Momente der Reflexion und Inspiration — Antworten finden oder innere Fragen bewegen.</p>
+              </div>
+            </div>
+          </div>
+          <p class="wellness-note" data-de="Coaching- und Achtsamkeitsangebote sind nicht in der Buchung enthalten und können separat vereinbart werden." data-en="Coaching and mindfulness offerings are not included in the booking and can be arranged separately.">Coaching- und Achtsamkeitsangebote sind nicht in der Buchung enthalten und können separat vereinbart werden.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Surroundings -->
+  <section class="surroundings" id="umgebung">
+    <div class="section-inner">
+      <p class="section-label reveal" data-de="Umgebung" data-en="Surroundings">Umgebung</p>
+      <h2 class="section-title reveal" data-de="Entdeckt die Region" data-en="Discover the Region">Entdeckt die Region</h2>
+      <p class="section-desc reveal" data-de="Von regionaler Kulinarik über Naturerlebnisse bis hin zu Kultur — rund um die Erlachoase gibt es viel zu entdecken." data-en="From regional cuisine to nature experiences and culture — there's so much to discover around the Erlachoase.">Von regionaler Kulinarik über Naturerlebnisse bis hin zu Kultur — rund um die Erlachoase gibt es viel zu entdecken.</p>
+      <div class="surr-categories">
+
+        <div class="surr-card reveal">
+          <div class="surr-card-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 3h18v18H3z"/><path d="M3 9h18M9 3v18"/></svg>
+          </div>
+          <h3 data-de="Einkaufen" data-en="Shopping">Einkaufen</h3>
+          <ul class="surr-list">
+            <li data-de="&lt;strong&gt;Bonusmarkt&lt;/strong&gt; — ca. 3 Min. zu Fuß (Mo–Sa 08–19 Uhr)" data-en="&lt;strong&gt;Bonusmarkt&lt;/strong&gt; — approx. 3 min. walk (Mon–Sat 08–19)" data-html><strong>Bonusmarkt</strong> — ca. 3 Min. zu Fuß (Mo–Sa 08–19 Uhr)</li>
+            <li data-de="&lt;strong&gt;Lidl&lt;/strong&gt; — ca. 10 Min. zu Fuß (Mo–Sa 07–21 Uhr)" data-en="&lt;strong&gt;Lidl&lt;/strong&gt; — approx. 10 min. walk (Mon–Sat 07–21)" data-html><strong>Lidl</strong> — ca. 10 Min. zu Fuß (Mo–Sa 07–21 Uhr)</li>
+            <li data-de="&lt;strong&gt;Bärenhof-Lädle&lt;/strong&gt; — Regionale Produkte (Fr 08–18, Sa 08–12 Uhr)" data-en="&lt;strong&gt;Bärenhof-Lädle&lt;/strong&gt; — Regional products (Fri 08–18, Sat 08–12)" data-html><strong>Bärenhof-Lädle</strong> — Regionale Produkte (Fr 08–18, Sa 08–12 Uhr)</li>
+            <li data-de="&lt;strong&gt;Bäckerei Treiber&lt;/strong&gt; — Frische Brötchen &amp; Kuchen täglich" data-en="&lt;strong&gt;Bäckerei Treiber&lt;/strong&gt; — Fresh bread rolls &amp; cakes daily" data-html><strong>Bäckerei Treiber</strong> — Frische Brötchen &amp; Kuchen täglich</li>
+          </ul>
+        </div>
+
+        <div class="surr-card reveal">
+          <div class="surr-card-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 3c-4.97 0-9 2.69-9 6v6c0 3.31 4.03 6 9 6s9-2.69 9-6V9c0-3.31-4.03-6-9-6z"/><path d="M12 3v18"/></svg>
+          </div>
+          <h3 data-de="Natur &amp; Radwege" data-en="Nature &amp; Cycling" data-html>Natur &amp; Radwege</h3>
+          <ul class="surr-list">
+            <li data-de="&lt;strong&gt;Siebenmühlental&lt;/strong&gt; — Rad- &amp; Wanderwege, historische Mühlen mit Biergärten" data-en="&lt;strong&gt;Siebenmühlental&lt;/strong&gt; — Cycling &amp; hiking trails, historic mills with beer gardens" data-html><strong>Siebenmühlental</strong> — Rad- &amp; Wanderwege, historische Mühlen mit Biergärten</li>
+            <li data-de="&lt;strong&gt;Bärensee&lt;/strong&gt; — Idyllischer Waldsee für Spaziergänge" data-en="&lt;strong&gt;Bärensee&lt;/strong&gt; — Idyllic forest lake for walks" data-html><strong>Bärensee</strong> — Idyllischer Waldsee für Spaziergänge</li>
+            <li data-de="&lt;strong&gt;Naturpark Schönbuch&lt;/strong&gt; — Ausgeschilderte Wander- &amp; Radwege" data-en="&lt;strong&gt;Naturpark Schönbuch&lt;/strong&gt; — Signposted hiking &amp; cycling trails" data-html><strong>Naturpark Schönbuch</strong> — Ausgeschilderte Wander- &amp; Radwege</li>
+            <li data-de="&lt;strong&gt;Schönbuchturm Herrenberg&lt;/strong&gt; — Weitblick bis zum Schwarzwald" data-en="&lt;strong&gt;Schönbuchturm Herrenberg&lt;/strong&gt; — Panoramic views to the Black Forest" data-html><strong>Schönbuchturm Herrenberg</strong> — Weitblick bis zum Schwarzwald</li>
+          </ul>
+        </div>
+
+        <div class="surr-card reveal">
+          <div class="surr-card-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 8h1a4 4 0 010 8h-1M2 8h16v9a4 4 0 01-4 4H6a4 4 0 01-4-4V8z"/><path d="M6 1v3M10 1v3M14 1v3"/></svg>
+          </div>
+          <h3 data-de="Kulinarik" data-en="Dining">Kulinarik</h3>
+          <ul class="surr-list">
+            <li data-de="&lt;strong&gt;Stettener Hütte&lt;/strong&gt; — Schwäbische Hausmannskost (2. &amp; 4. Sonntag im Monat)" data-en="&lt;strong&gt;Stettener Hütte&lt;/strong&gt; — Swabian home cooking (2nd &amp; 4th Sunday of the month)" data-html><strong>Stettener Hütte</strong> — Schwäbische Hausmannskost (2. &amp; 4. Sonntag im Monat)</li>
+            <li data-de="&lt;strong&gt;Kochenmühle&lt;/strong&gt; — Regionale Spezialitäten im Siebenmühlental" data-en="&lt;strong&gt;Kochenmühle&lt;/strong&gt; — Regional specialties in Siebenmühlental" data-html><strong>Kochenmühle</strong> — Regionale Spezialitäten im Siebenmühlental</li>
+            <li data-de="&lt;strong&gt;Brauhaus Echterdingen&lt;/strong&gt; — Eigene Brauerei &amp; deftige Küche" data-en="&lt;strong&gt;Brauhaus Echterdingen&lt;/strong&gt; — Own brewery &amp; hearty cuisine" data-html><strong>Brauhaus Echterdingen</strong> — Eigene Brauerei &amp; deftige Küche</li>
+            <li data-de="&lt;strong&gt;Pizzeria Dolce Calabria&lt;/strong&gt; — Italienisch &amp; mediterran" data-en="&lt;strong&gt;Pizzeria Dolce Calabria&lt;/strong&gt; — Italian &amp; Mediterranean" data-html><strong>Pizzeria Dolce Calabria</strong> — Italienisch &amp; mediterran</li>
+            <li data-de="&lt;strong&gt;Sportgaststätte Weidacher Höhe&lt;/strong&gt; — Kroatisch inspiriert" data-en="&lt;strong&gt;Sportgaststätte Weidacher Höhe&lt;/strong&gt; — Croatian inspired" data-html><strong>Sportgaststätte Weidacher Höhe</strong> — Kroatisch inspiriert</li>
+          </ul>
+        </div>
+
+        <div class="surr-card reveal">
+          <div class="surr-card-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2L2 7l10 5 10-5-10-5z"/><path d="M2 17l10 5 10-5"/></svg>
+          </div>
+          <h3 data-de="Kultur &amp; Ausflüge" data-en="Culture &amp; Trips" data-html>Kultur &amp; Ausflüge</h3>
+          <ul class="surr-list">
+            <li data-de="&lt;strong&gt;Stuttgart&lt;/strong&gt; — Schlossplatz, Wilhelma, Shopping (ca. 20 Min. S-Bahn)" data-en="&lt;strong&gt;Stuttgart&lt;/strong&gt; — Palace Square, Wilhelma Zoo, Shopping (approx. 20 min. S-Bahn)" data-html><strong>Stuttgart</strong> — Schlossplatz, Wilhelma, Shopping (ca. 20 Min. S-Bahn)</li>
+            <li data-de="&lt;strong&gt;Mercedes-Benz &amp; Porsche Museum&lt;/strong&gt; — Autogeschichte hautnah" data-en="&lt;strong&gt;Mercedes-Benz &amp; Porsche Museum&lt;/strong&gt; — Automotive history up close" data-html><strong>Mercedes-Benz &amp; Porsche Museum</strong> — Autogeschichte hautnah</li>
+            <li data-de="&lt;strong&gt;Burg Hohenzollern&lt;/strong&gt; — Eine der schönsten Burgen Deutschlands" data-en="&lt;strong&gt;Burg Hohenzollern&lt;/strong&gt; — One of Germany's most beautiful castles" data-html><strong>Burg Hohenzollern</strong> — Eine der schönsten Burgen Deutschlands</li>
+            <li data-de="&lt;strong&gt;Schloss Lichtenstein&lt;/strong&gt; — Märchenschloss der Schwäbischen Alb" data-en="&lt;strong&gt;Schloss Lichtenstein&lt;/strong&gt; — Fairytale castle of the Swabian Alps" data-html><strong>Schloss Lichtenstein</strong> — Märchenschloss der Schwäbischen Alb</li>
+            <li data-de="&lt;strong&gt;SI-Centrum Stuttgart&lt;/strong&gt; — Musicals, Shows &amp; Wellness" data-en="&lt;strong&gt;SI-Centrum Stuttgart&lt;/strong&gt; — Musicals, Shows &amp; Wellness" data-html><strong>SI-Centrum Stuttgart</strong> — Musicals, Shows &amp; Wellness</li>
+          </ul>
+        </div>
+
+      </div>
+
+      <!-- Nature Gallery Slider -->
+      <div class="gallery-slider-wrapper reveal" style="margin-top: 3rem;">
+        <button class="slider-nav slider-prev" onclick="slideNature(-1)">&#8249;</button>
+        <div class="gallery-slider" id="natureSlider">
+          <div class="gallery-slider-item" onclick="openLightbox(40)">
+            <img src="images/20250825_153949432_iOS.jpg" alt="Garten mit Sonnenblumen" loading="lazy">
+            <div class="gallery-caption" data-de="Garten — Sonnenblumen" data-en="Garden — Sunflowers">Garten — Sonnenblumen</div>
+          </div>
+          <div class="gallery-slider-item" onclick="openLightbox(41)">
+            <img src="images/20250913_111904660_iOS.jpg" alt="Wald Naturerlebnis" loading="lazy">
+            <div class="gallery-caption" data-de="Wald — Naturerlebnis" data-en="Forest — Nature Experience">Wald — Naturerlebnis</div>
+          </div>
+          <div class="gallery-slider-item" onclick="openLightbox(42)">
+            <img src="images/20250913_112505599_iOS.jpg" alt="Wald Infotafel" loading="lazy">
+            <div class="gallery-caption" data-de="Wald — Infotafel &amp; Insektenhotel" data-en="Forest — Info Board &amp; Insect Hotel" data-html>Wald — Infotafel &amp; Insektenhotel</div>
+          </div>
+          <div class="gallery-slider-item" onclick="openLightbox(43)">
+            <img src="images/20250913_113507370_iOS.jpg" alt="Idyllischer Waldteich" loading="lazy">
+            <div class="gallery-caption" data-de="See — Idyllischer Waldteich" data-en="Lake — Idyllic Forest Pond">See — Idyllischer Waldteich</div>
+          </div>
+          <div class="gallery-slider-item" onclick="openLightbox(44)">
+            <img src="images/20250913_113517885_iOS.jpg" alt="See mit Waldpanorama" loading="lazy">
+            <div class="gallery-caption" data-de="See — Waldpanorama" data-en="Lake — Forest Panorama">See — Waldpanorama</div>
+          </div>
+          <div class="gallery-slider-item" onclick="openLightbox(45)">
+            <img src="images/20250913_113634724_iOS.jpg" alt="Radweg am See" loading="lazy">
+            <div class="gallery-caption" data-de="See — Radweg am Ufer" data-en="Lake — Cycling Path by the Shore">See — Radweg am Ufer</div>
+          </div>
+          <div class="gallery-slider-item" onclick="openLightbox(46)">
+            <img src="images/20250913_113714861_iOS.jpg" alt="See mit Seerosen" loading="lazy">
+            <div class="gallery-caption" data-de="See — Seerosen &amp; Wald" data-en="Lake — Water Lilies &amp; Forest" data-html>See — Seerosen &amp; Wald</div>
+          </div>
+          <div class="gallery-slider-item" onclick="openLightbox(47)">
+            <img src="images/20250913_113918678_iOS.jpg" alt="Waldwanderweg" loading="lazy">
+            <div class="gallery-caption" data-de="Wald — Wanderweg" data-en="Forest — Hiking Trail">Wald — Wanderweg</div>
+          </div>
+          <div class="gallery-slider-item" onclick="openLightbox(48)">
+            <img src="images/20250913_114022747_iOS.jpg" alt="Grüner Waldpfad" loading="lazy">
+            <div class="gallery-caption" data-de="Wald — Grüner Pfad" data-en="Forest — Green Path">Wald — Grüner Pfad</div>
+          </div>
+          <div class="gallery-slider-item" onclick="openLightbox(49)">
+            <img src="images/20250913_114213932_iOS.jpg" alt="Grillplatz im Wald" loading="lazy">
+            <div class="gallery-caption" data-de="Wald — Grillplatz &amp; Schutzhütte" data-en="Forest — BBQ Area &amp; Shelter" data-html>Wald — Grillplatz &amp; Schutzhütte</div>
+          </div>
+          <div class="gallery-slider-item" onclick="openLightbox(50)">
+            <img src="images/PXL_20220710_114133878.jpg" alt="Schmetterling auf Wildblume" loading="lazy">
+            <div class="gallery-caption" data-de="Natur — Schmetterling auf Wildblume" data-en="Nature — Butterfly on Wildflower">Natur — Schmetterling auf Wildblume</div>
+          </div>
+          <div class="gallery-slider-item" onclick="openLightbox(51)">
+            <img src="images/20250913_112548760_iOS.jpg" alt="Fitness-Station am Waldrand" loading="lazy">
+            <div class="gallery-caption" data-de="Fitness — Station am Waldrand" data-en="Fitness — Station at Forest Edge">Fitness — Station am Waldrand</div>
+          </div>
+          <div class="gallery-slider-item" onclick="openLightbox(52)">
+            <img src="images/20250913_113015579_iOS.jpg" alt="Outdoor Trainingsplatz" loading="lazy">
+            <div class="gallery-caption" data-de="Fitness — Outdoor-Trainingsplatz" data-en="Fitness — Outdoor Training Area">Fitness — Outdoor-Trainingsplatz</div>
+          </div>
+        </div>
+        <button class="slider-nav slider-next" onclick="slideNature(1)">&#8250;</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- Booking -->
+  <section class="booking" id="buchen">
+    <div class="section-inner">
+      <p class="section-label reveal" data-de="Buchen" data-en="Book">Buchen</p>
+      <h2 class="section-title reveal" data-de="Euren Aufenthalt planen" data-en="Plan Your Stay">Euren Aufenthalt planen</h2>
+      <p class="section-desc reveal" data-de="Prüft die Verfügbarkeit und bucht euren Aufenthalt in der Erlachoase direkt über unseren Kalender oder eure bevorzugte Plattform." data-en="Check availability and book your stay at the Erlachoase directly via our calendar or your preferred platform.">Prüft die Verfügbarkeit und bucht euren Aufenthalt in der Erlachoase direkt über unseren Kalender oder eure bevorzugte Plattform.</p>
+
+      <div class="checkin-info reveal">
+        <div class="checkin-badge">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M15 3h4a2 2 0 012 2v14a2 2 0 01-2 2h-4M10 17l5-5-5-5M13.8 12H3"/></svg>
+          <span data-de="Check-in: &lt;strong&gt;ab 17:00 Uhr&lt;/strong&gt; (Keypad, flexibel)" data-en="Check-in: &lt;strong&gt;from 5:00 PM&lt;/strong&gt; (keypad, flexible)" data-html>Check-in: <strong>ab 17:00 Uhr</strong> (Keypad, flexibel)</span>
+        </div>
+        <div class="checkin-badge">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 21H5a2 2 0 01-2-2V5a2 2 0 012-2h4M16 17l5-5-5-5M19.8 12H9"/></svg>
+          <span data-de="Check-out: &lt;strong&gt;bis 11:00&lt;/strong&gt;" data-en="Check-out: &lt;strong&gt;by 11:00 AM&lt;/strong&gt;" data-html>Check-out: <strong>bis 11:00</strong></span>
+        </div>
+      </div>
+
+      <div class="booking-embed reveal" id="booking-calendar">
+        <!-- Smoobu Calendar Widget -->
+        <div id="smoobuApartment2917276de" class="calendarWidget">
+          <div class="calendarContent"
+               data-load-calendar-url="https://login.smoobu.com/de/cockpit/widget/single-calendar/2917276"
+               data-verification="0b0e4b4029552444ad18a907557515dfbec12f288b3ae0a9c5cedcc72795cc61"
+               data-baseUrl="https://login.smoobu.com"
+               data-disable-css="false">
+          </div>
+          <script type="text/javascript" src="https://login.smoobu.com/js/Apartment/CalendarWidget.js"></script>
+        </div>
+      </div>
+
+
+
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="footer-inner">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <img src="logo.png" alt="Erlachoase">
+          <p data-de="Eure kleine Oase am Waldrand — zum Entspannen, Kraft tanken und neue Inspiration finden. Wir freuen uns auf euch!" data-en="Your little oasis by the forest — to relax, recharge and find new inspiration. We look forward to welcoming you!">Eure kleine Oase am Waldrand — zum Entspannen, Kraft tanken und neue Inspiration finden. Wir freuen uns auf euch!</p>
+        </div>
+        <div>
+          <h4 data-de="Navigation" data-en="Navigation">Navigation</h4>
+          <ul class="footer-links">
+            <li><a href="#wohnung" data-de="Wohnung" data-en="Apartment">Wohnung</a></li>
+            <li><a href="#galerie" data-de="Galerie" data-en="Gallery">Galerie</a></li>
+            <li><a href="#wellness">Wellness</a></li>
+            <li><a href="#umgebung" data-de="Umgebung" data-en="Surroundings">Umgebung</a></li>
+            <li><a href="#buchen" data-de="Buchen" data-en="Book">Buchen</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4 data-de="Kontakt" data-en="Contact">Kontakt</h4>
+          <div class="footer-contact-item">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+            <a href="mailto:stay@erlachoase.de">stay@erlachoase.de</a>
+          </div>
+          <div class="footer-contact-item">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M2 12h20M12 2a15.3 15.3 0 014 10 15.3 15.3 0 01-4 10 15.3 15.3 0 01-4-10 15.3 15.3 0 014-10z"/></svg>
+            <a href="https://www.erlachoase.de" target="_blank">www.erlachoase.de</a>
+          </div>
+          <div class="footer-contact-item">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>
+            <span>Erlachstraße 21<br>70771 Leinfelden-Echterdingen</span>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span data-de="&copy; 2025 Erlachoase. Alle Rechte vorbehalten." data-en="&copy; 2025 Erlachoase. All rights reserved." data-html>&copy; 2025 Erlachoase. Alle Rechte vorbehalten.</span>
+        <a href="#" onclick="openImpressum(); return false;" data-de="Impressum" data-en="Legal Notice">Impressum</a>
+        <span>Holiday &amp; Inspiration</span>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Impressum Modal -->
+  <div class="impressum-modal" id="impressumModal">
+    <div class="impressum-content">
+      <button class="impressum-close" onclick="closeImpressum()">&times;</button>
+      <h2 data-de="Impressum" data-en="Legal Notice">Impressum</h2>
+      <h3 data-de="Angaben gemäß § 5 DDG" data-en="Information pursuant to § 5 DDG (German Digital Services Act)">Angaben gemäß § 5 DDG</h3>
+      <p>Daniel Wirtz<br>Erlachstraße 21<br>70771 Leinfelden-Echterdingen</p>
+      <h3 data-de="Kontakt" data-en="Contact">Kontakt</h3>
+      <p>E-Mail: <a href="mailto:stay@erlachoase.de">stay@erlachoase.de</a></p>
+      <h3 data-de="Umsatzsteuer" data-en="VAT">Umsatzsteuer</h3>
+      <p data-de="Kleinunternehmer gemäß § 19 UStG. Es wird keine Umsatzsteuer erhoben und daher auch nicht ausgewiesen." data-en="Small business pursuant to § 19 UStG (German VAT Act). No VAT is charged or shown.">Kleinunternehmer gemäß § 19 UStG. Es wird keine Umsatzsteuer erhoben und daher auch nicht ausgewiesen.</p>
+      <h3 data-de="Streitschlichtung" data-en="Dispute Resolution">Streitschlichtung</h3>
+      <p data-de="Die Europäische Kommission stellt eine Plattform zur Online-Streitbeilegung (OS) bereit:" data-en="The European Commission provides a platform for online dispute resolution (ODR):">Die Europäische Kommission stellt eine Plattform zur Online-Streitbeilegung (OS) bereit:</p>
+      <p><a href="https://ec.europa.eu/consumers/odr/" target="_blank" rel="noopener">https://ec.europa.eu/consumers/odr/</a></p>
+      <p data-de="Wir sind nicht bereit oder verpflichtet, an Streitbeilegungsverfahren vor einer Verbraucherschlichtungsstelle teilzunehmen." data-en="We are neither willing nor obliged to participate in dispute resolution proceedings before a consumer arbitration body.">Wir sind nicht bereit oder verpflichtet, an Streitbeilegungsverfahren vor einer Verbraucherschlichtungsstelle teilzunehmen.</p>
+    </div>
+  </div>
+
+  <!-- Lightbox -->
+  <div class="lightbox" id="lightbox">
+    <button class="lightbox-close" onclick="closeLightbox()">&times;</button>
+    <button class="lightbox-nav lightbox-prev" onclick="navigateLightbox(-1)">&#8249;</button>
+    <img src="" alt="" id="lightbox-img">
+    <button class="lightbox-nav lightbox-next" onclick="navigateLightbox(1)">&#8250;</button>
+  </div>
+
+  <script src="script.js"></script>
+
+</body>
+</html>
