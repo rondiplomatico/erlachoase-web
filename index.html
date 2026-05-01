@@ -576,7 +576,7 @@
     <div class="section-inner">
       <p class="section-label reveal" data-de="Buchen" data-en="Book">Buchen</p>
       <h2 class="section-title reveal" data-de="Euren Aufenthalt planen" data-en="Plan Your Stay">Euren Aufenthalt planen</h2>
-      <p class="section-desc reveal" data-de="Prüft die Verfügbarkeit und bucht euren Aufenthalt in der Erlachoase direkt über unseren Kalender oder eure bevorzugte Plattform." data-en="Check availability and book your stay at the Erlachoase directly via our calendar or your preferred platform.">Prüft die Verfügbarkeit und bucht euren Aufenthalt in der Erlachoase direkt über unseren Kalender oder eure bevorzugte Plattform.</p>
+      <p class="section-desc reveal" data-de="Prüft die Verfügbarkeit und bucht euren Aufenthalt in der Erlachoase direkt über unseren Kalender." data-en="Check availability and book your stay at Erlachoase directly with us.">Prüft die Verfügbarkeit und bucht euren Aufenthalt in der Erlachoase direkt über unseren Kalender.</p>
 
       <div class="checkin-info reveal">
         <div class="checkin-badge">
@@ -590,15 +590,10 @@
       </div>
 
       <div class="booking-embed reveal" id="booking-calendar">
-        <!-- Smoobu Calendar Widget -->
-        <div id="smoobuApartment2917276de" class="calendarWidget">
-          <div class="calendarContent"
-               data-load-calendar-url="https://login.smoobu.com/de/cockpit/widget/single-calendar/2917276"
-               data-verification="0b0e4b4029552444ad18a907557515dfbec12f288b3ae0a9c5cedcc72795cc61"
-               data-baseUrl="https://login.smoobu.com"
-               data-disable-css="false">
-          </div>
-          <script type="text/javascript" src="https://login.smoobu.com/js/Apartment/CalendarWidget.js"></script>
+        <!-- Smoobu Booking Tool Widget -->
+        <div id="apartmentIframe2917276">
+          <script type="text/javascript" src="https://login.smoobu.com/js/Settings/BookingToolIframe.js"></script>
+          <script>BookingToolIframe.initialize({"url": "https://login.smoobu.com/de/booking-tool/iframe/1410366/2917276", "baseUrl": "https://login.smoobu.com", "target": "#apartmentIframe2917276"})</script>
         </div>
       </div>
 

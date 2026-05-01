@@ -1,0 +1,33 @@
+/*
+ * Smoobu Booking Tool — angepasste CSS-Variablen fuer die Erlachoase.
+ * Einfuegen im Smoobu-Backend unter Booking Tool -> Styling.
+ * Wird NICHT von index.html geladen (Booking-Tool laeuft im iframe von login.smoobu.com).
+ * Datei dient als Backup / Versionskontrolle der Werte.
+ *
+ * Palette-Quelle: CSS-Variablen in style.css (--gold, --green, --text, --text-light, --pink, --white).
+ */
+
+:root {
+  /* font colors */
+  --font-color-default: #3D3525;
+  --font-color-label: #6B5F4D;
+  --font-color-input: #3D3525;
+  --font-color-icons: #8B6914;
+  --font-color-input-icons: #8B6914;
+  --font-color-headlines: #8B6914;
+  --font-color-error: #C4467A;
+  --font-color-black: #3D3525;
+
+  /* borders */
+  --border-radius: 6px;
+  --border-width: 1px;
+  --border-color-default: rgba(139, 105, 20, 0.15);
+  --border-color-container: rgba(139, 105, 20, 0.12);
+  --border-color-input: rgba(139, 105, 20, 0.15);
+  --border-color-image: rgba(139, 105, 20, 0.12);
+  --border-color-error-shaddow: rgba(196, 70, 122, 0.25);
+
+  /* button */
+  --button-color-primary: #506B3A;
+  --button-color-secondary: #FDFBF7;
+}
