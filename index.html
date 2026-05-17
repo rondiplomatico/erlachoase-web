@@ -24,6 +24,7 @@
         <li><a href="#galerie" data-de="Galerie" data-en="Gallery">Galerie</a></li>
         <li><a href="#wellness">Wellness</a></li>
         <li><a href="#umgebung" data-de="Umgebung" data-en="Surroundings">Umgebung</a></li>
+        <li><a href="#bewertungen" data-de="Bewertungen" data-en="Reviews">Bewertungen</a></li>
         <li><a href="#buchen" class="nav-cta" data-de="Buchen" data-en="Book">Buchen</a></li>
       </ul>
       <div class="lang-switch">
@@ -43,6 +44,7 @@
     <a href="#galerie" onclick="closeMobile()" data-de="Galerie" data-en="Gallery">Galerie</a>
     <a href="#wellness" onclick="closeMobile()">Wellness</a>
     <a href="#umgebung" onclick="closeMobile()" data-de="Umgebung" data-en="Surroundings">Umgebung</a>
+    <a href="#bewertungen" onclick="closeMobile()" data-de="Bewertungen" data-en="Reviews">Bewertungen</a>
     <a href="#buchen" onclick="closeMobile()" data-de="Buchen" data-en="Book">Buchen</a>
     <div class="mobile-lang-switch">
       <button data-lang="de" onclick="setLanguage('de')">DE</button>
@@ -567,6 +569,86 @@
           </div>
         </div>
         <button class="slider-nav slider-next" onclick="slideNature(1)">&#8250;</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- Reviews -->
+  <section class="reviews" id="bewertungen">
+    <div class="section-inner">
+      <p class="section-label reveal" data-de="Was Gäste sagen" data-en="What Guests Say">Was Gäste sagen</p>
+      <h2 class="section-title reveal" data-de="Echte Erfahrungen" data-en="Real Experiences">Echte Erfahrungen</h2>
+      <p class="section-desc reveal" data-de="Was unsere Gäste über ihren Aufenthalt in der Erlachoase berichten." data-en="What our guests say about their stay at Erlachoase.">Was unsere Gäste über ihren Aufenthalt in der Erlachoase berichten.</p>
+      <div class="reviews-stats reveal">
+        <span class="reviews-stars-big">★★★★★</span>
+        <span class="reviews-score">4,9</span>
+      </div>
+      <div class="reviews-slider-wrapper reveal">
+        <button class="slider-nav slider-prev" onclick="slideReviews(-1)">&#8249;</button>
+        <div class="reviews-slider" id="reviewsSlider">
+
+          <div class="review-card">
+            <div class="review-stars">★★★★★</div>
+            <p class="review-text">„Wir haben uns für diese Unterkunft entschieden, um ein Musical in Stuttgart zu besuchen! Dafür war die nahe Lage ideal! Die Wohnung hat uns alles geboten, was wir gebraucht haben! Rundum ein toller Aufenthalt!"</p>
+            <span class="review-flag">🇩🇪</span>
+          </div>
+
+          <div class="review-card">
+            <div class="review-stars">★★★★★</div>
+            <p class="review-text">„Nous avons passé un excellent séjour dans le logement proposé par Daniel et Monika. Tout était parfaitement propre à notre arrivée. Daniel a été très prévenant — merci pour les clés et les radis du jardin ! Je recommande !"</p>
+            <span class="review-flag">🇫🇷</span>
+          </div>
+
+          <div class="review-card">
+            <div class="review-stars">★★★★★</div>
+            <p class="review-text">„The apartment was exceptionally clean and very well prepared. We had tea, coffee, and toiletries available, which made us feel very welcome and comfortable. It truly felt like a home away from home."</p>
+            <span class="review-flag">🇬🇧</span>
+          </div>
+
+          <div class="review-card">
+            <div class="review-stars">★★★★★</div>
+            <p class="review-text">„Wir haben hier für ein Wochenende mit unseren beiden Kindern übernachtet. Die Gastgeber waren total nett und haben unseren Kindern noch extra Spielsachen gebracht! Die Wohnung war toll, wir haben uns richtig wohl gefühlt."</p>
+            <span class="review-flag">🇩🇪</span>
+          </div>
+
+          <div class="review-card">
+            <div class="review-stars">★★★★★</div>
+            <p class="review-text">„Thank you for a truly lovely stay. From the moment we arrived, we felt warmly welcomed and completely at ease. The space was beautifully presented, impeccably clean, and thoughtfully equipped with everything we could possibly need."</p>
+            <span class="review-flag">🇬🇧</span>
+          </div>
+
+          <div class="review-card">
+            <div class="review-stars">★★★★★</div>
+            <p class="review-text">„Wir hatten Daniels Unterkunft während der YogaWorld in der Messe Stuttgart gebucht. Vor Ort fühlten wir uns wie zuhause. Die Wohnung ist toll eingerichtet und an jeder Stelle findet man liebevolle Details. Wir können diese Unterkunft wirklich uneingeschränkt empfehlen!"</p>
+            <span class="review-flag">🇩🇪</span>
+          </div>
+
+          <div class="review-card">
+            <div class="review-stars">★★★★★</div>
+            <p class="review-text">„Great place, everything is just like the picture, very clean, new, cosy place. Host was very friendly, the apartment is just like home. I definitely recommend this place for visiting Stuttgart."</p>
+            <span class="review-flag">🇬🇧</span>
+          </div>
+
+          <div class="review-card">
+            <div class="review-stars">★★★★★</div>
+            <p class="review-text">„Vielen Dank für den Aufenthalt in eurer kleinen Oase, uns hat es sehr gut gefallen. Wir hatten alles was nötig war. Wir wünschen weiterhin viel Erfolg!"</p>
+            <span class="review-flag">🇩🇪</span>
+          </div>
+
+          <div class="review-card">
+            <div class="review-stars">★★★★★</div>
+            <p class="review-text">„We had a wonderful stay at Daniel and Monika's place. Both hosts were friendly and quick to respond. The house was clean, well-organized, and equipped with all the basic necessities. We would definitely recommend it to others!"</p>
+            <span class="review-flag">🇬🇧</span>
+          </div>
+
+          <div class="review-card">
+            <div class="review-stars">★★★★★</div>
+            <p class="review-text">„Wir waren mit unseren 3 kleinen Kindern (1J, 4J und 7J) dort und haben uns sehr wohl gefühlt. Supernette Gastgeber!"</p>
+            <span class="review-flag">🇩🇪</span>
+          </div>
+
+        </div>
+        <button class="slider-nav slider-next" onclick="slideReviews(1)">&#8250;</button>
       </div>
     </div>
   </section>

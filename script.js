@@ -158,6 +158,14 @@ function slideContainer(containerId, dir) {
 
 function slideGallery(dir) { slideContainer('gallerySlider', dir); }
 function slideNature(dir) { slideContainer('natureSlider', dir); }
+function slideReviews(dir) {
+  var container = document.getElementById('reviewsSlider');
+  var item = container.querySelector('.review-card');
+  if (!item) return;
+  var itemWidth = item.offsetWidth + 24;
+  var visibleItems = Math.floor(container.offsetWidth / itemWidth);
+  container.scrollBy({ left: dir * itemWidth * Math.max(1, visibleItems - 1), behavior: 'smooth' });
+}
 
 // ===== IMPRESSUM MODAL =====
 function openImpressum() {
